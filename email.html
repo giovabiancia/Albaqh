@@ -1,0 +1,96 @@
+messaggio email html
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+<style media="screen">
+   td {
+      padding: 15px;
+      border-bottom:2px solid #EB2828;
+      margin: 0;
+      width: 50%;
+   }
+   p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 12pt;
+   }
+   h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 18pt;
+      text-transform: uppercase;
+   }
+</style>
+
+<table cellspacing="0" style="width:70%; margin:0 auto; height:200px">
+   <tr style="margin-bottom:50px">
+      <td style="border-color:#fff; width:30%;"></td>
+      <td style="border-color:#fff; width:40%; text-align:center;"><img style="width:XXXpx;height:XXXpx" src="url-logo" alt=""></td>
+      <td style="border-color:#fff; width:30%;"></td>
+   </tr>
+   <tr style="margin-bottom:50px">
+      <td style="border-color:#fff; width:30%;"></td>
+      <td style="border-color:#fff; width:40%; text-align:center;"><h2>[oggetto]</h2></td>
+      <td style="border-color:#fff; width:30%;"></td>
+   </tr>
+
+</table>
+
+<table cellspacing="2" style="width:50%; margin:0 auto;">
+
+  <tr>
+    <td style="text-align:center; background-color:#E8E8E8;"><p>Nome: [nome]</p></td>
+  </tr>
+  <tr>
+    <td style="text-align:center; background-color:#F2F2F2;"><p>Cognome: [cognome]</p></td>
+  </tr>
+  <tr>
+    <td style="text-align:center; background-color:#E8E8E8;"><p>Telefono: [telefono]</p></td>
+  </tr>
+  <tr>
+    <td style="text-align:center; background-color:#F2F2F2;"><p>Email: [mail]</p></td>
+  </tr>
+  <tr>
+    <td style="text-align:center; background-color:#E8E8E8;"><p>Testo del messaggio: [messaggio]</p></td>
+  </tr>
+</table>
+
+
+
+
+
+<div class="col-sm-6">
+  <div class="form-cr">
+    [text nome class:form-cr placeholder "Nome & Cognome"]
+  </div>
+</div>
+<div class="col-sm-6">
+  <div class="form-cr">
+    [email mail class:form-cr placeholder "Email"]
+  </div>
+</div>
+<div class="col-sm-6">
+  <div class="form-cr">
+    [text azienda class:form-cr placeholder "Associazione / Azienda"]
+  </div>
+</div>
+<div class="col-sm-6">
+  <div class="form-cr">
+    [text oggetto class:form-cr placeholder "Oggetto"]
+  </div>
+</div>
+<div class="col-sm-12">
+  <div class="form-cr">
+    [textarea messaggio class:form-cr placeholder 40x8 "messaggio"]
+  </div>
+</div>
+<div class="col-sm-12">
+   <div class="form privacy">
+     <span class="wpcf7-form-control-wrap privacy"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required privacy" id="privacy"><span class="wpcf7-list-item first last"><input type="checkbox" name="privacy[]" value="Acconsento al trattamento dei miei dati personali" id="checkbox-1" class="regular-checkbox"><label for="checkbox-1">Acconsento al trattamento dei miei dati personali</label></span></span></span>
+  </div>
+  <div class="form recaptcha-blocco">
+      [recaptcha class:recaptcha-cr placeholder "oggetto"]
+  </div>
+    <div class="form">
+     [submit class:bottone "Invia"]
+   </div>
+</div>
