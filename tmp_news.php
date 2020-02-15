@@ -77,7 +77,7 @@ get_header(); ?>
 									<li><a href="href="<?php echo get_the_permalink(); ?>""><?php echo get_the_date(); ?></a></li>
 								</ul>
 
-								<h3 class="entry-title"><a href="href="<?php echo get_the_permalink(); ?>""><?php the_title(); ?></a></h3>
+								<h3 class="entry-title"><a href="<?php echo get_the_permalink(); ?>""><?php the_title(); ?></a></h3>
 
 								<div class="author">
 									<img src="media/blog/auth2.jpg" alt="author">

@@ -69,10 +69,10 @@
 
 						<div class="col-lg-3 col-md-6">
 							<div class="widget footer-widget">
-								<h3 class="widget-title">Our Address</h3>
+								<h3 class="widget-title">Indirizzo</h3>
 
 								<p>
-									Lavaca Street, Suite 24, Road Apt New York, USA
+									Via B.buozzi 247, Monteroni d'arbia, Siena, IT
 								</p>
 
 								<ul class="footer-social-link">
@@ -92,7 +92,7 @@
 
 				<div class="site-info">
 					<div class="copyright">
-						<p>© 2019 All Rights Reserved Design by <a href="http://www.pixelsigns.art" target="_blank">PixelSigns</a></p>
+						<p>© 2019 All Rights Reserved Design by <a href="http://www.bplanner.it" target="_blank">Bplanner</a></p>
 					</div>
 
 					<ul class="site-info-menu">

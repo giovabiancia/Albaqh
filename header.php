@@ -67,10 +67,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<style>
 	.page-banner{
-		background-color:#e39024 !important ;
+		background-image:linear-gradient(100deg, #e28a17 0%, #e6b474 100%)
 	}
 	.page-banner-contact{
-		background-color:#e39024 !important ;
+		background-image:linear-gradient(100deg, #e28a17 0%, #e6b474 100%)
 	}
 	</style>
 </head>
@@ -167,7 +167,7 @@
 							</ul>
 
 							<div class="nav-right">
-								<a href="<?php site_url(); ?>/sign-up" class="nav-btn">Log In</a>
+								<a href="http://bplanner.herokuapp.com" class="nav-btn">Log In</a>
 							</div>
 						</div>
 						<!-- /.menu-wrapper -->

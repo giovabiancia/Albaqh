@@ -28,12 +28,12 @@ get_header(); ?>
 			<div class="container">
 				<div class="page-title-wrapper">
 					<ul class="post-meta color-theme">
-						<li><a href="#">December 10, 2019</a></li>
+						<?php echo get_avatar( get_the_author_meta( 1 ) , 32 ); ?>
 					</ul>
 					<h1 class="page-title"><?php echo get_the_title(); ?></h1>
 
 					<ul class="post-meta">
-						<li><span>By <?php echo get_the_author(); ?> </span></li>
+						<li><span>By: <?php echo the_author(); ?> </span></li>
 						
 						<li><span><?php echo get_the_date(); ?></span></li>
 					</ul>
@@ -62,7 +62,7 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 						<article class="post post-signle">
 								<div class="feature-image">
-									<a href="blog-signle.html">
+									<a>
 									<?php the_post_thumbnail('full'); ?>
 									</a>
 								</div>

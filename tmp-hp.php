@@ -5,8 +5,20 @@ Template Name: Homepage
 get_header();
 ?>
 <style>
-.pixsass-icon-box-content{
-    margin-top: 40% !important; 
+
+ .play-btn{
+	 margin-top: 2rem;
+	background-color: #E39530;
+	padding: 7px;
+	border-radius: 20px;
+
+}
+
+.play-btn i{
+	margin-left:7px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 </style>
@@ -51,50 +63,87 @@ get_header();
 		<section class="featured">
 			<div class="container">
 				<div class="section-title text-center wow pixFade">
-					<h3 class="sub-title">Inizia a pinificare</h3>
-					<h2 class="title">Tutto ciò di cui hai bisogno</h2>
+					<!-- <h3 class="sub-title">Inizia a pinificare</h3> -->
+					<h2 class="title">Che cosa è Bplanner ?</h2>
+					
+							<div class="video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="play-btn popup-video pix-btn wow pixFadeUp">Guarda il video <i class="ei ei-arrow_triangle-right"></i></a>
+							</div>
+							
+							<!-- /.video-thumbnail -->					
+				
 				</div><!-- /.section-title -->
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="saaspik-icon-box-wrapper style-one wow pixFadeLeft" data-wow-delay="0.3s">
-							<div class="saaspik-icon-box-icon">
-								<img src="<?php echo get_template_directory_uri();?>/media/feature/brain.svg" alt="">
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title"><a href="#">Sviluppa <br>la tua idea</a></h3>
-							</div>
-						</div><!-- /.pixsass-box style-one -->
-					</div><!-- /.col-md-4 -->
-
-					<div class="col-md-4">
-						<div class="saaspik-icon-box-wrapper style-one wow pixFadeLeft" data-wow-delay="0.5s">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: pixFadeLeft;">
 							<div class="saaspik-icon-box-icon">
 								<img src="<?php echo get_template_directory_uri();?>/media/feature/document.svg" alt="">
 							</div>
 							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title"><a href="#">Crea un <br> Business plan</a></h3>
-							</div>
-						</div><!-- /.pixsass-box style-one -->
-					</div><!-- /.col-md-4 -->
+								<h3 class="pixsass-icon-box-title"><a href="#pitch">Crea il tuo Lean Plan</a></h3>
+								<p>
+								È una metodologia di business planning, che si fonda sulla rielaborazione dinamica delle ipotesi iniziali al fine di soddisfare al meglio le aspettative dei clienti
+									
+								</p>
 
-					<div class="col-md-4">
-						<div class="saaspik-icon-box-wrapper style-one wow pixFadeLeft" data-wow-delay="0.7s">
+								<a href="#pitch" class="more-btn"><i class="ei ei-arrow_right"></i></a>
+
+								<svg class="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370px" height="270px">
+									<path fill-rule="evenodd" fill="rgb(253, 248, 248)" d="M-0.000,269.999 L-0.000,-0.001 L370.000,-0.001 C370.000,-0.001 347.889,107.879 188.862,112.181 C35.160,116.338 -0.000,269.999 -0.000,269.999 Z"></path>
+								</svg>
+							</div>
+						</div><!-- /.pixsass-box style-four -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: pixFadeLeft;">
+							<div class="saaspik-icon-box-icon">
+								<img src="<?php echo get_template_directory_uri();?>/media/feature/brain.svg" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<h3 class="pixsass-icon-box-title"><a href="#canvas">Sviluppa la tua idea</a></h3>
+
+								<p>
+									Grazie ai canvas di pianificazione strategica potrai iniziare a strutturare il funzionamento del tuo progetto imprenditoriale!
+								</p>
+
+								<a href="#canvas" class="more-btn"><i class="ei ei-arrow_right"></i></a>
+							</div>
+
+							<svg class="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370px" height="270px">
+								<path fill-rule="evenodd" fill="rgb(253, 248, 248)" d="M-0.000,269.999 L-0.000,-0.001 L370.000,-0.001 C370.000,-0.001 347.889,107.879 188.862,112.181 C35.160,116.338 -0.000,269.999 -0.000,269.999 Z"></path>
+							</svg>
+						</div><!-- /.pixsass-box style-four -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: pixFadeLeft;">
 							<div class="saaspik-icon-box-icon">
 								<img src="<?php echo get_template_directory_uri();?>/media/feature/finance.svg" alt="">
 							</div>
 							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title"><a href="#">Cerca finanziamenti</a></h3>
+								<h3 class="pixsass-icon-box-title"><a href="#">Cerca Finanziamenti</a></h3>
+								<p>
+									Ti diamo la possibilità di presentare il tuo progetto imprenditoriale ai nostri partner finanziatori!
+								</p>
+
+								<a href="#" class="more-btn"><i class="ei ei-arrow_right"></i></a>
 							</div>
-						</div><!-- /.pixsass-box style-one -->
-					</div><!-- /.col-md-4 -->
-				</div><!-- /.row -->
+
+							<svg class="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370px" height="270px">
+								<path fill-rule="evenodd" fill="rgb(253, 248, 248)" d="M-0.000,269.999 L-0.000,-0.001 L370.000,-0.001 C370.000,-0.001 347.889,107.879 188.862,112.181 C35.160,116.338 -0.000,269.999 -0.000,269.999 Z"></path>
+							</svg>
+						</div><!-- /.pixsass-box style-four -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+				</div>
+
+				
 			</div><!-- /.container -->
         </section><!-- /.featured -->
         <!--=================================-->
 		<!--=         Editor Design         =-->
 		<!--=================================-->
-		<section class="editor-design mt-5">
+		<section class="editor-design mt-5"  id="pitch">
 			<div class="container">
 				<div class="row">
 
@@ -119,7 +168,7 @@ get_header();
 								</h2>
 
 								<p class="wow pixFadeUp" data-wow-delay="0.5s">
-									La nostra procedura guidata ti guida<br>
+									La nostra procedura guidata ti aiuta <br>
 									passo dopo passo
 								</p>
 							</div>
@@ -142,7 +191,7 @@ get_header();
         	<!--=================================-->
 		<!--=         Revolutionize         =-->
 		<!--=================================-->
-		<section class="revolutionize">
+		<section class="revolutionize" id="canvas">
 			<div class="bg-angle"></div>
 			<div class="container">
 				<div class="section-title dark-title text-center">
@@ -199,7 +248,7 @@ get_header();
 								<img src="<?php echo get_template_directory_uri();?>/media/feature/easy.svg" alt="feature">
 							</div>
 							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title"><a href="#">Sempicità di pianificazione</a></h3>
+								<h3 class="pixsass-icon-box-title"><a href="#">Semplicità di pianificazione</a></h3>
 								<p>
 									La nostra procedura guidata <br>
 									rende semplice a tutti  <br>
