@@ -107,12 +107,12 @@
               <img class="mt-5 mb-10" alt="" src="images/logo-wide-white.png">
               <p> </p>
               <ul class="list-inline mt-5">
-                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
-                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:0577 377209">0577 377209</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="mailto:info@albaqh.com">info@albaqh.com</a> </li>
               </ul>            
-              <h5 class="widget-title mt-10 mb-10">Connect With Us</h5>
+              <h5 class="widget-title mt-10 mb-10">Connettiti con noi </h5>
               <ul class="styled-icons icon-sm icon-bordered icon-theme-colored">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/ALBAQH/"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
@@ -123,29 +123,28 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="widget dark">
-              <h4 class="widget-title line-bottom-theme-colored">Useful Links</h4>
+              <h4 class="widget-title line-bottom-theme-colored">Link utili</h4>
               <ul class="list angle-double-right list-border">
-                <li><a href="page-about-style1.html">About</a></li>
-                <li><a href="page-membership.html">Membership</a></li>
-                <li><a href="page-riding-school.html">Riding School</a></li>
-                <li><a href="page-our-horses.html">Our Horses</a></li>
-                <li><a href="shop-category-sidebar.html">Shop</a></li>              
+                <li><a href="<?php get_home_url(); ?>/about">About</a></li>
+                <li><a href="<?php get_home_url(); ?>/stallion">Stallion</a></li>
+                <li><a href="<?php get_home_url(); ?>/news">News</a></li>
+                <li><a href="<?php get_home_url(); ?>/contatti">Contatti</a></li>
               </ul>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="widget dark">            
-              <h4 class="widget-title line-bottom-no-border">Photos from Flickr</h4>
+              <h4 class="widget-title line-bottom-no-border">Gallery</h4>
               <div id="flickr-feed" class="clearfix mt-30">
                 <!-- Flickr Link -->
-                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08">
-                </script>
+<!--                 <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08">
+ -->                </script>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="widget dark">
-              <h4 class="widget-title line-bottom-theme-colored">Opening Hours</h4>
+              <h4 class="widget-title line-bottom-theme-colored">Orario di apertura</h4>
               <div class="opening-hourse">
                 <ul class="list list-border text-gray-darkgray">
                   <li class="clearfix"> <span><i class="fa fa-clock-o mr-5"></i> Mond -Tuesday :</span>
@@ -182,11 +181,14 @@
 
 
 
-	
 
+
+
+	
+<!-- 
   
-<!-- < ?php wp_head(); ?>
-< ?php wp_footer(); ?> -->
+< ?php wp_head(); ?>
+< ?php wp_footer(); ?>  -->
 
 </body>
 </html>

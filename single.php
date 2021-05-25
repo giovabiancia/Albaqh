@@ -8,171 +8,134 @@
  */
 
 get_header(); ?>
+<!-- Section: inner-header -->
+<style>
+  .rpwwt-post-title {
+    margin-left: 20px;
+    font-weight:bold;
 
-<style media="screen">
-
-
-.site-header .site-main-menu li > a{
-	color: #2b2350 !important;
-
-}
-.page-banner.blog-details-banner .post-meta.color-theme li a{
-	color: #2b2350 !important;
-
-}
+  }
+ .wp-post-image{
+   border-radius: 50px;
+ }
 </style>
-<!--==========================-->
-		<!--=         Banner         =-->
-		<!--==========================-->
-		<section class="page-banner blog-details-banner">
-			<div class="container">
-				<div class="page-title-wrapper">
-					<ul class="post-meta color-theme">
-						<?php echo get_avatar( get_the_author_meta( 1 ) , 32 ); ?>
-					</ul>
-					<h1 class="page-title"><?php echo get_the_title(); ?></h1>
+<section
+  class="inner-header divider parallax layer-overlay overlay-dark-5"
+  data-bg-img="<?php echo the_post_thumbnail_url(  );?>"
+>
+  <div class="container pt-90 pb-50">
+    <!-- Section Content -->
+    <div class="section-content pt-100">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title text-white"><?php echo get_the_title(); ?></h3>
+          <ul class="list-inline text-white">
+            <li>Home /</li>
+            <li><span class="text-gray">Single Post</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-					<ul class="post-meta">
-						<li><span>By: <?php echo the_author(); ?> </span></li>
-						
-						<li><span><?php echo get_the_date(); ?></span></li>
-					</ul>
-				</div>
-				<!-- /.page-title-wrapper -->
-			</div>
-			<!-- /.container -->
+<section>
+<?php if (have_posts()) : while (have_posts()) : the_post(); 
 
-			<svg class="circle" data-parallax='{"x" : -200}' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="950px" height="950px">
-				<path fill-rule="evenodd" stroke="rgb(250, 112, 112)" stroke-width="100px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.051" fill="none" d="M450.000,50.000 C670.914,50.000 850.000,229.086 850.000,450.000 C850.000,670.914 670.914,850.000 450.000,850.000 C229.086,850.000 50.000,670.914 50.000,450.000 C50.000,229.086 229.086,50.000 450.000,50.000 Z" />
-			</svg>
+$thumb_id = get_post_thumbnail_id();
+$thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
 
-			<ul class="animate-ball">
-				<li class="ball"></li>
-				<li class="ball"></li>
-				<li class="ball"></li>
-				<li class="ball"></li>
-				<li class="ball"></li>
-			</ul>
-		</section>
-		<section class="blog-single">
-			<div class="container pb-120">
-				<div class="row">
-					<div class="col-md-8">
-						<div class="post-wrapper">
-						<?php while ( have_posts() ) : the_post(); ?>
-						<article class="post post-signle">
-								<div class="feature-image">
-									<a>
-									<?php the_post_thumbnail('full'); ?>
-									</a>
-								</div>
-								<div class="blog-content">
-
-									<p>
-									<?php the_content(); ?>
-										 
-									</p>
+?>
 
 
-									
+  <div class="container mt-30 mb-30 pt-30 pb-30">
+    <div class="row">
+      <div class="col-md-9 blog-pull-right">
+        <div class="blog-posts single-post">
+          <article class="post clearfix mb-0">
+            <div class="entry-header">
+              <div class="post-thumb thumb">
+                <img
+                  src="<?php the_post_thumbnail_url(); ?>"
+                  alt="post image "
+                  style="max-height:400px; width:auto"
+                  class="img-responsive img-fullwidth"
+                />
+              </div>
+            </div>
+            <div class="entry-title pt-10 pl-15">
+              <h4>
+                <a class="text-uppercase" href="#"
+                  ><?php echo get_the_title(); ?>
+                </a>
+              </h4>
+            </div>
+            <div class="entry-meta pl-15">
+              <ul class="list-inline">
+                <li>
+                  Posted:
+                  <span class="text-theme-colored"
+                    ><?php echo get_the_date(); ?></span
+                  >
+                </li>
+                <li>By:
+                  
+                  <span class="text-theme-colored"
+                    >
+                    <?php echo the_author(); ?>
+                  </span>
+                </li>
+<!--                 <li><i class="fa fa-comments-o ml-5 mr-5"></i> </li>
+ -->              </ul>
+            </div>
+            <div class="entry-content mt-10">
+           
 
-									<div class="tagcloud">
-										<span>Tags:</span>
-										<?php 
-										$tags = get_tags(array(
-										'hide_empty' => false
-										));
-										
-										foreach ($tags as $tag) {
-										echo '<a>' . $tag->name . '</a>';
-										}
-										
-										?>
-										
-									</div>
-								</div><!-- /.post-content -->
-							</article><!-- /.post -->
-		
-			<span><?php echo get_the_date(); ?></span>
-			
-			
-				<?php
-				// Start the loop.
+              
+              <p class="mb-15"><?php the_content(); ?></p>
+              <?php endwhile; ?>
+          <?php endif; ?>
 
+          
+            </div>
+          </article>
 
-					the_post_navigation( array(
-						'prev_text' => '<span class="post-title">%title</span>'.'<span class="bottone-prev"></span>'.'<a class="bottone t-a-p" href="http://www.popcomm.it/culturarepublic/blog-news"" title="progetti">torna al blog</a>',
-						'next_text' => '<span class="post-title">%title</span>'.'<span class="bottone-next"></span>',
-
-					) );
-
-				// End the loop.
-				endwhile;
-				?>
-
-	
-							<div class="blog-share">
-								
-
-								<ul class="share-link">
-								<?php
+          <div class="blog-share mt-3" style="margin-top:2rem">
+          <?php
 								if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar
 								('ShareButton') ) : ?>
-								<?php endif;
+              <?php endif;
 								?>
-									<!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> -->
-								</ul>
-							</div><!-- /.blog-share -->
+          </div>
+          <!-- /.blog-share -->
+        </div>
+        <!-- /.post-wrapper -->
+      </div>
+      <!-- /.col-md-8 -->
 
+      <div class="col-md-3">
+        <div class="sidebar">
+         
+          <?php
+					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar
+					('PostFilter') ) : ?>
+          <?php endif;
+					?>
 
-
-							
-
-
-						</div><!-- /.post-wrapper -->
-					</div><!-- /.col-md-8 -->
-
-					<div class="col-md-4">
-						<div class="sidebar">
-							<div id="search" class="widget widget_search">
-								<form role="search" class="search-form-widget">
-									<label>
-										<input type="search" class="search-field" placeholder="Search...">
-									</label>
-									<button type="submit" class="search-submit">
-										<i class="ei ei-icon_search"></i>
-									</button>
-								</form>
-							</div>
-							<?php
-								if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar
-								('PostFilter') ) : ?>
-								<?php endif;
-								?>
-
-								<?php 
-										$tags = get_tags(array(
-										'hide_empty' => false
-										));
-										
-										foreach ($tags as $tag) {
-										echo '<a>' . $tag->name . '</a>';
-										}
-										
-										?>
-
-							
-							
-						</div><!-- /.sidebar -->
-					</div><!-- /.col-md-4 -->
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-			
-		
-		</section><!-- /.blog-single -->
-
-
+          <?php 
+							$tags = get_tags(array(
+							'hide_empty' =>
+          false )); foreach ($tags as $tag) { echo '<a>' . $tag->name . '</a>';
+          } ?>
+        </div>
+        <!-- /.sidebar -->
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.blog-single -->
 
 <?php get_footer(); ?>

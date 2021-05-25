@@ -111,17 +111,70 @@
     />
     <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
     <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+   
+    <style>
+  .mt-5{
+    margin-top: 5rem
+  }
+  .mt-4{  
+    margin-top: 4rem
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  }
+  .mt-3{  
+    margin-top: 3rem
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+  }
+  .mt-2{  
+    margin-top: 2rem
+
+  }
+  .mb-5{
+    margin-bottom: 5rem
+  }
+  .mb-4{  
+    margin-bottom: 4rem
+
+  }
+  .mb-3{  
+    margin-bottom: 3rem
+
+  }
+  .mb-2{  
+    margin-bottom: 2rem
+
+  }
+  #menu-item-18{
+    display:inline-block !important;
+  }
+  
+@media (max-width: 768px) { 
+  .mens{
+    display:none;
+    
+  }
+  .header-top{
+    display:none;
+
+  }
+  .menuzord .showhide{
+    padding-top:40px !important;
+  }
+ }
+ @media (min-width: 768px) { 
+   .logoR{
+     display:none;
+   }
+  
+ }
+ .owl-carousel .owl-item img {
+   max-height: 350px;
+   object-fit:cover;
+ }
+.cavRow {
+  display:flex;
+  align-items: center;
+}
+</style>
 
     <!-- CSS | Theme Color -->
     <link
@@ -136,18 +189,19 @@
     <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
     <!-- JS | jquery plugin collection for this theme -->
     <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery-plugin-collection.js"></script>
+ 
   </head>
   <body class="">
     <div id="wrapper" class="clearfix">
       <!-- preloader -->
-      <div id="preloader">
+     <!--  <div id="preloader">
         <div id="spinner" class="spinner large-icon">
-          <img alt="" src="images/preloaders/13.gif" />
+          <img alt="" src="<?php echo get_template_directory_uri();?>/assets/images/preloaders/13.gif" />
         </div>
         <div id="disable-preloader" class="btn btn-default btn-sm">
           Disable Preloader
         </div>
-      </div>
+      </div> -->
       <!-- Header -->
       <header id="header" class="header">
         <div class="header-top bg-theme-colored sm-text-center p-0">
@@ -164,7 +218,7 @@
                     class="styled-icons icon-circled icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15"
                   >
                     <li>
-                      <a href="#"><i class="fa fa-facebook text-white"></i></a>
+                      <a href="https://www.facebook.com/ALBAQH/"><i class="fa fa-facebook text-white"></i></a>
                     </li>
                     <li>
                       <a href="#"><i class="fa fa-twitter text-white"></i></a>
@@ -186,34 +240,35 @@
             </div>
           </div>
         </div>
-        <div class="header-middle p-0 xs-text-center">
+        <div class="header-middle p-0 xs-text-center mens">
           <div class="container pt-0 pb-0">
             <div class="row">
-              <div class="col-xs-12 col-sm-3 col-md-6">
+              <div class="col-xs-12 col-sm-3 col-md-6 mens">
                 <div class="widget no-border m-0">
                   <a
-                    href="index-mp-layout1.html"
+                    href="<?php echo home_url(); ?>"
                     class="menuzord-brand pull-left flip xs-pull-center mt-20 mb-10"
                     ><img
                       alt=""
-                      src="<?php echo get_template_directory_uri();?>/assets/images/logo-wide.png"
+                      src="<?php echo get_template_directory_uri();?>/assets/images/logoQh.png"
                   /></a>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-3 col-md-2">
+              <div class="col-xs-12 col-sm-3 col-md-2 mens">
                 <div class="widget no-border m-0">
                   <div class="mt-15 mb-10 text-right flip sm-text-center">
                     <div class="font-15 text-black-333 mb-5 font-weight-600">
+                    <a href="mailto:info@albaqh.com" class="  cursor">
                       <i class="fa fa-envelope text-theme-colored font-18"></i>
-                      Mail Us Today
+                     Contattaci per Email
                     </div>
-                    <a href="#" class="font-12 text-gray">
-                      info@albaqh.com</a
+                   
+                     </a
                     >
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-3 col-md-2">
+              <div class="col-xs-12 col-sm-3 col-md-2 mens">
                 <div class="widget no-border m-0">
                   <div class="mt-15 mb-10 text-right flip sm-text-center">
                     <div class="font-15 text-black-333 mb-5 font-weight-600">
@@ -228,17 +283,18 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-3 col-md-2">
+              <div class="col-xs-12 col-sm-3 col-md-2 mens">
                 <div class="widget no-border m-0">
                   <div class="mt-15 mb-10 text-right flip sm-text-center">
                     <div class="font-15 text-black-333 mb-5 font-weight-600">
+                    <a href="tel:0577 377209" class="">
                       <i
                         class="fa fa-phone-square text-theme-colored font-18"
                       ></i>
                       0577 377209
                     </div>
-                    <a href="#" class="font-12 text-gray">
-                     Chiamaci per maggiori informazioni</a
+                    
+                     </a
                     >
                   </div>
                 </div>
@@ -253,6 +309,13 @@
                 id="menuzord"
                 class="menuzord pull-left flip menuzord-responsive"
               >
+              <a
+                    href="<?php echo home_url(); ?>"
+                    class="menuzord-brand pull-left flip xs-pull-center mt-20 mb-10 logoR"
+                    ><img
+                      alt=""
+                      src="<?php echo get_template_directory_uri();?>/assets/images/logoQh.png"
+                  /></a>
                     <?php
                   wp_nav_menu( array(
                     // 'theme_location'  => 'navbar',
@@ -265,25 +328,7 @@
                     'walker'          => new wp_bootstrap_navwalker()
                   ) );
                 ?>
-               <!--  <ul class="menuzord-menu">
-                  <li class="active"><a href="#home">Home</a></li>
-                  <li>
-                    <a href="#"
-                      >About </a
-                    >
-                  </li>
-                  <li><a href="#">Horses</a></li>
-                  
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      >Contatti
-                      </a
-                    >
-                  </li>
-                </ul> -->
+               
                 <ul class="pull-right flip hidden-sm hidden-xs">
                   <li>
                     <!-- Ajax Popup form Starts -->
@@ -324,5 +369,4 @@
 
       <!-- Header -->
     </div>
-  </body>
-</html>
+ 

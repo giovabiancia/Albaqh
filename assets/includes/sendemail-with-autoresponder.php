@@ -8,10 +8,10 @@ $autoresponder = new PHPMailer();
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'just55.justhost.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'themeforest@ismail-hossain.me';                 // SMTP username
-$mail->Password = 'AsDf12**';                           // SMTP password
+$mail->Username = 'albaqhcontact@gmail.com';                 // SMTP username
+$mail->Password = 'developer123!';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
@@ -30,8 +30,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 		$botcheck = $_POST['contact-form-botcheck'];
 
-        $toemail = 'spam.thememascot@gmail.com'; // Your Email Address
-        $toname = 'ThemeMascot'; // Your Name
+        $toemail = 'info@albaqh.com'; // Your Email Address
+        $toname = 'Alba Quarter Horse'; // Your Name
 
 		if( $botcheck == '' ) {
 

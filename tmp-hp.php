@@ -18,22 +18,31 @@ get_header();
         $video = get_sub_field('video');
 
 		?>
-	<section id="home" class="divider no-bg layer-overlay overlay-dark-light" data-bg-img="images/bg/bg16.jpg">
+	<section  id="home" class="divider no-bg layer-overlay overlay-dark-light" data-bg-img="images/bg/bg16.jpg" style="height:85vh">
 	
 	<div class="bg-video">
-	  <div id="home-video" class="video">
-		<div class="player video-container" data-property="{videoURL:'https://www.youtube.com/watch?v=lhlF3Bl0iho&t=2707s',containment:'#home-video',autoPlay:true, showControls:false, mute:false, startAt:0, opacity:1}"></div>
-	  </div>
-	</div>
+	  <!-- <div id="home-video" class="video">
+		<div class="player video-container" data-property="{videoURL:'E5ln4uR4TwQ',containment:'#home-video',autoPlay:true, showControls:false, mute:false, startAt:0, opacity:1}"></div>
+	  </div> -->
+	  
+		  
+			<video controls autoplay loop  muted id="myVideo" style="width:100%; height:100%; object-fit:cover">
+				<source src="<?php echo $video ?>" type="video/mp4">
+			</video>
+
+		 
+	  
+		
+	</div>	
 	
 	<div class="display-table">
 	  <div class="display-table-cell">
 		<div class="container pt-200 pb-200">
 		  <div class="row">
 			<div class="col-md-12 text-center">
-			  <h1 class="text-white text-uppercase font-60 font-weight-600 mb-0">Horse <span class="text-theme-colored"> <?php echo $titolo ?></span></h1>
+			  <h1 class="text-white text-uppercase font-60 font-weight-600 mb-0">Alba <span class="text-theme-colored"> Quarter</span><br> Horse</h1>
 			  <h4 class="text-white font-weight-400 mt-0"><?php echo $sottotitolo ?></h4>
-			  <a class="btn btn-colored btn-theme-colored btn-flat smooth-scroll-to-target mt-20" href="#donate-now">Scopri di più</a>
+			  <a class="btn btn-colored btn-theme-colored btn-flat smooth-scroll-to-target mt-20" href="<?php echo get_home_url(); ?>/about">Scopri di più</a>
 			</div>
 		  </div>
 		</div>
@@ -101,7 +110,7 @@ get_header();
   
 
   <!-- end main-content -->
-  </div>
+
 
 
 
